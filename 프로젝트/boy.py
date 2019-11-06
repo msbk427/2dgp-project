@@ -98,8 +98,8 @@ class Boy:
 
     def __init__(self):
         self.x, self.y = 100, 100
-        self.image = load_image('warrior.png')
-        self.reverse_image = load_image('warrior_reverse.png')
+        self.image = load_image('images//character//warrior.png')
+        self.reverse_image = load_image('images//character//warrior_reverse.png')
         self.dir = 1
         self.frame = 0
         self.frame_count = 0

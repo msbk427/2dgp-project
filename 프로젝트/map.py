@@ -1,5 +1,6 @@
 from pico2d import *
 from monster import Monster
+import random
 
 import game_world
 
@@ -29,13 +30,13 @@ class Map:
 
     def __init__(self):
         if Map.image is None:
-            Map.image = load_image('tiles_caves.png')
+            Map.image = load_image('images//tile//tiles_caves.png')
 
     def update(self):
         pass
 
     def add_monster(self):
-        monster = Monster(600, 600)
+        monster = Monster(600, 600, 3)#random.randint(0, 3)
         game_world.add_object(monster, 1)
 
     def draw(self):
