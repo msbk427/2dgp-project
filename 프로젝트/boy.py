@@ -104,6 +104,7 @@ class Boy:
         self.frame = 0
         self.frame_count = 0
         self.timer = 0
+        self.attack_point = 1
         self.hp = 10
         self.turn = 0
         self.event_que = []
